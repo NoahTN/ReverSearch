@@ -6,6 +6,10 @@
    "background": {
       "service_worker": "/js/background.js"
    },
+   "content_scripts": [{
+      "js": [ "/js/content.js" ],
+      "matches": ["<all_urls>"]
+    }],
    "permissions": [
       "storage", 
       "activeTab", 
